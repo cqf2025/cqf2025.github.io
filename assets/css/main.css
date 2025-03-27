@@ -96,11 +96,11 @@
 	}
 	
 	.column:first-child {
-		flex: 2; /* La primera columna ocupa el doble del espacio */
+		flex: 3; /* La primera columna ocupa el doble del espacio */
 	}
 	
 	.column:last-child {
-		flex: 1; /* La segunda columna ocupa la mitad del espacio de la primera */
+		flex: 2; /* La segunda columna ocupa la mitad del espacio de la primera */
 	}
 	
 	.column ul {

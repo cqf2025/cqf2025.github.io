@@ -4058,36 +4058,31 @@
 
 		.speakers-container {
 			display: flex;
-			justify-content: space-around; /* Distribuye los logos uniformemente */
-			align-items: center; /* Alinea verticalmente los logos */
-			gap: 15px; /* Espaciado entre los logos */
-			flex-wrap: nowrap; /* Evita que los logos se apilen en pantallas pequeñas */
+			justify-content: center;  /* <-- Centramos el contenido */
+			align-items: flex-start;
+			gap: 40px;  /* más separación entre speakers */
+			flex-wrap: wrap;  /* Permite que se acomoden si el espacio es pequeño */
 			padding: 20px;
-			max-width: 100%; /* Asegura que no haya restricción en el ancho */
+			width: 100%;
 		}
 		
 		.speaker {
-			text-align: center; /* Centra el título debajo del logo */
-			flex: 1; /* Permite que los logos se distribuyan proporcionalmente */
-			max-width: 180px; /* Asegura que los logos no se hagan demasiado grandes */
+			text-align: center;
+			width: 200px;
 		}
 		
 		.speaker img {
-			width: 100%; /* Hace que el logo ocupe todo el espacio disponible dentro de su contenedor */
-			max-width: 150px; /* Ajusta el tamaño máximo del logo */
-			height: auto; /* Mantiene la proporción */
-			transition: transform 0.3s ease-in-out; /* Agrega un efecto al pasar el cursor */
+			object-fit: cover;
+			width: 200px;
+			height: 200px;
+			border-radius: 8px;
+			transition: transform 0.3s ease-in-out;
 		}
-		
+		  
 		.speaker img:hover {
-			transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
-		}
-		
-		.speaker p {
-			margin-top: 8px;
-			font-size: 14px;
-			font-weight: bold;
-		}
+			transform: scale(1.05);
+		 }
+		  
 		
 
 		.map-container {
@@ -4105,7 +4100,7 @@
 
 		.partners-container {
 			display: flex;
-			justify-content: space-around; /* Distribuye los logos uniformemente */
+			justify-content: center;
 			align-items: center; /* Alinea verticalmente los logos */
 			gap: 15px; /* Espaciado entre los logos */
 			flex-wrap: nowrap; /* Evita que los logos se apilen en pantallas pequeñas */
@@ -4135,3 +4130,21 @@
 			font-size: 14px;
 			font-weight: bold;
 		}
+
+		#three .inner {
+			margin: 0 auto;
+			max-width: 1200px; /* o lo que prefieras */
+		  }
+
+		  #three {
+			background-color: #f2f2f2; /* o algo como #eaeaea */
+			padding: 40px 0;
+		  }
+
+		  #three .inner.speakers-section {
+			max-width: 1200px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 40px 20px;
+			background-color: #f4f4f4; /* Fondo más oscuro */
+		  }		  

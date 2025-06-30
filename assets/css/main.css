@@ -4111,13 +4111,13 @@
 		
 		.speaker {
 			text-align: center;
-			width: 200px;
+			width: 150px;
 		}
 		
 		.speaker img {
 			object-fit: cover;
-			width: 200px;
-			height: 200px;
+			width: 150px;
+			height: 150px;
 			border-radius: 8px;
 			transition: transform 0.3s ease-in-out;
 		}

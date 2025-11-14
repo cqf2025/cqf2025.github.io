@@ -7,6 +7,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
+
+<script>
+window.addEventListener("message", function(event) {
+    if (event.data && typeof event.data === "object" && event.data.type === "embed-size") {
+        var iframe = document.getElementById("programFrame");
+        iframe.style.height = event.data.height + "px";
+    }
+});
+</script>
+
+	
 	<body>
 
 		<!-- Header -->
@@ -34,7 +45,11 @@
 					<header>
 						<h3>Program</h3>
 					</header>
-					<iframe src="https://docs.google.com/document/d/e/2PACX-1vRkaF9q5i7nTG7Hm-K-QBEaEynT_xfWNNJVf0mioWRSopvMejTGFK0b5CHhcjGzUcQJ0QFYCaE-uMxi/pub?embedded=true"></iframe>
+					<iframe 
+    					id="programFrame"
+    					src="https://docs.google.com/document/d/e/2PACX-1vRkaF9q5i7nTG7Hm-K-QBEaEynT_xfWNNJVf0mioWRSopvMejTGFK0b5CHhcjGzUcQJ0QFYCaE-uMxi/pub?embedded=true"
+    					style="width:100%; border:none; overflow:hidden;">
+					</iframe>
 				</div>
 			</section>
 		
